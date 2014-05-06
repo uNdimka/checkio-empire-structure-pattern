@@ -1,39 +1,60 @@
 <p>
-    <i>( Describe task in general )</i>
+    Sophia's drones are simple and can recognize symbols in a word only as a digit or a letter.
+    She wants to learn drones to understand commands that are represented as "words" consisted by letters and digits.
+    For that Sophia uploaded "patterns" which describe the sequence of digits and letters in the command.
+    But drone memory can store only integer numbers and convert it in binary format for comparing.
+    We should help Sophia and write module for comparing pattern and command.
 </p>
 
 <p>
-    Sum two passed ints
+    You are given a pattern as a positive integer and a command as a word.
+    For the comparing drone should convert integer pattern in binary form, add zeroes to left for the command length and
+    compare this combination with the command.<br>
+    <strong>1 is a letter. 0 is a digit.</strong><br>
+    If the pattern and the command are coincided, then return True, else -- False.
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
+<div>
+    For example. The pattern is 42 and the command is "12a0b3e4".<br>
+    42 == 101010 in binary form, but this is not enough of length. Let's append zeroes -- "00101010".
+    Then compare:
+    <pre class="brush: text">
+      42 == 00101010
+12a0b3e4 == DDLDLDLD
+--------------------
+    True    VVVVVVVV
+    </pre>
 
-<p><i>( Explain input and output values )</i></p>
+    One more example -- 101 and "ab23b4zz":
+    <pre class="brush: text">
+     101 == 01100101
+ab23b4zz == LLDDLDLL
+--------------------
+   False    XVXVXXXV
+    </pre>
+</div>
+
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> Two arguments. A pattern as a positive integer and a command as a string.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Is the pattern coincide with the command or not as a boolean.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+check_pattern(42, "12a0b3e4") == True
+check_pattern(101, "ab23b4zz") == False
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+
 </p>
