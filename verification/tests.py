@@ -7,30 +7,88 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": (42, '12a0b3e4'),
+            "answer": True,
+            "explanation": [
+                "      42",
+                "00101010",
+                "12a0b3e4",
+                "DDLDLDLD",
+                "VVVVVVVV"]
         },
+
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": (101, 'ab23b4zz'),
+            "answer": False,
+            "explanation": [
+                "     101",
+                "01100101",
+                "ab23b4zz",
+                "LLDDLDLL",
+                "XVXVXXXV"]
+        },
+
+        {
+            "input": (127, 'Сheckio'),
+            "answer": False,
+            "explanation": [
+                "    127",
+                "1111111",
+                "Сheckio",
+                "LLLLLLL",
+                "VVVVVVV"]},
+
+        {
+            "input": (7, 'Hello'),
+            "answer": False,
+            "explanation": [
+                "    7",
+                "00111",
+                "Hello",
+                "LLLLL",
+                "XXVVV"]},
+
     ],
-    "Extra": [
+    "Edge": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": (0, "0"),
+            "answer": True,
+            "explanation": ""
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": (0, "012345678901234567890"),
+            "answer": True,
+            "explanation": ""
+        },
+        {
+            "input": (1, "A"),
+            "answer": True,
+            "explanation": ""
+        },
+        {
+            "input": (1, "1"),
+            "answer": False,
+            "explanation": ""
+        },
+        {
+            "input": (1, "z"),
+            "answer": True,
+            "explanation": ""
+        },
+        {
+            "input": (2 ** 32 - 1, "LoremIpsumDoLorsiTametConsectet"),
+            "answer": True,
+            "explanation": ""
+        },
+        {
+            "input": (2 ** 32 - 1, "Loremipsumdolorsitametconsecte9"),
+            "answer": False,
+            "explanation": ""
+        },
+
+
     ]
 }

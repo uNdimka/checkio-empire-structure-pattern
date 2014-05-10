@@ -6,4 +6,5 @@ if __name__ == '__main__':
     assert check_command(42, "12a0b3e4") == True, "42 is the answer"
     assert check_command(101, "ab23b4zz") == False, "one hundred plus one"
     assert check_command(0, "478103487120470129") == True, "Any number"
-    assert check_command(127, "checkio") == True, "Just a word"
+    assert check_command(127, "Сheckio") == True, "Uppercase"
+    assert check_command(7, "Hello") == False, "Only full match"
