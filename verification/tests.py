@@ -30,7 +30,15 @@ TESTS = {
                 "LLDDLDLL",
                 "XVXVXXXV"]
         },
-
+        {
+            "input": (0, '478103487120470129'),
+            "answer": True,
+            "explanation": [
+                "                 0",
+                "000000000000000000",
+                "478103487120470129",
+                "DDDDDDDDDDDDDDDDDD",
+                "VVVVVVVVVVVVVVVVVV"]},
         {
             "input": (127, 'Сheckio'),
             "answer": False,
@@ -54,40 +62,84 @@ TESTS = {
     ],
     "Edge": [
         {
-            "input": (0, "0"),
+            "input": (0, '0'),
             "answer": True,
-            "explanation": ""
-        },
+            "explanation": [
+                "0",
+                "0",
+                "0",
+                "D",
+                "V"]},
+
         {
-            "input": (0, "012345678901234567890"),
+            "input": (0, '012345678901234567890'),
             "answer": True,
-            "explanation": ""
-        },
+            "explanation": [
+                "                    0",
+                "000000000000000000000",
+                "012345678901234567890",
+                "DDDDDDDDDDDDDDDDDDDDD",
+                "VVVVVVVVVVVVVVVVVVVVV"]},
+
         {
-            "input": (1, "A"),
+            "input": (1, 'A'),
             "answer": True,
-            "explanation": ""
-        },
+            "explanation": [
+                "1",
+                "1",
+                "A",
+                "L",
+                "V"]},
+
         {
-            "input": (1, "1"),
+            "input": (1, '1'),
             "answer": False,
-            "explanation": ""
-        },
+            "explanation": [
+                "1",
+                "1",
+                "1",
+                "D",
+                "X"]},
+
         {
-            "input": (1, "z"),
+            "input": (1, 'z'),
             "answer": True,
-            "explanation": ""
-        },
+            "explanation": [
+                "1",
+                "1",
+                "z",
+                "L",
+                "V"]},
+
         {
-            "input": (2 ** 32 - 1, "LoremIpsumDoLorsiTametConsectet"),
-            "answer": True,
-            "explanation": ""
-        },
-        {
-            "input": (2 ** 32 - 1, "Loremipsumdolorsitametconsecte9"),
+            "input": (4294967295, 'LoremIpsumDoLorsiTametConsectet'),
             "answer": False,
-            "explanation": ""
-        },
+            "explanation": [
+                "                     4294967295",
+                "11111111111111111111111111111111",
+                "LoremIpsumDoLorsiTametConsectet",
+                "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+                "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
+
+        {
+            "input": (1, 'LoremIpsumDoLorsiTametConsectet'),
+            "answer": False,
+            "explanation": [
+                "                              1",
+                "0000000000000000000000000000001",
+                "LoremIpsumDoLorsiTametConsectet",
+                "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXV"]},
+
+        {
+            "input": (4294967295, 'Loremipsumdolorsitametconsecte9'),
+            "answer": False,
+            "explanation": [
+                "                     4294967295",
+                "11111111111111111111111111111111",
+                "Loremipsumdolorsitametconsecte9",
+                "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLD",
+                "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX"]},
 
 
     ]

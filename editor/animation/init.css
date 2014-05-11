@@ -58,6 +58,16 @@
     border-color: #de0202;
 }
 
+.animation-content .explanation table td {
+    font-family: monospace;
+    color: #294270;
+    font-size: 16px;
+    max-width: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+}
+
 .tryit-content {
     background-color: #dfe8f7;
     font-family: Verdana, Arial, helvetica, sans-serif;

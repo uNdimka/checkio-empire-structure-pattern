@@ -85,16 +85,32 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 $content.find('.call').html('Pass: ' + checkioInputStr);
                 $content.find('.answer').remove();
             }
-            //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var strNumber = explanation[0],
+                strBinary = explanation[1],
+                command = explanation[2],
+                dlForm = explanation[3],
+                compForm = explanation[4];
 
+            var $table = $("<table></table>");
+            var firstRow = $("<tr></tr>"),
+                secondRow = $("<tr></tr>"),
+                thirdRow = $("<tr></tr>"),
+                fourthRow = $("<tr></tr>");
+
+            var createTd = function(letter) {
+                return $("<td></td>").text(letter);
+            };
+
+            for (var i = 0; i < strNumber.length; i++) {
+                firstRow.append(createTd(strNumber[i]));
+                secondRow.append(createTd(command[i]));
+                thirdRow.append(createTd("="));
+                fourthRow.append(createTd("?"));
+            }
+            $table.append(firstRow, secondRow, thirdRow, fourthRow);
+
+            $content.find(".explanation").append($table);
 
             this_e.setAnimationHeight($content.height() + 60);
 
