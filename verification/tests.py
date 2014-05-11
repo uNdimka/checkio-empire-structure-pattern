@@ -59,6 +59,26 @@ TESTS = {
                 "LLLLL",
                 "XXVVV"]},
 
+        {
+            "input": (5, 'H2O'),
+            "answer": True,
+            "explanation": [
+                "  5",
+                "101",
+                "H2O",
+                "LDL",
+                "VVV"]},
+
+        {
+            "input": (42, 'C2H5OH'),
+            "answer": False,
+            "explanation": [
+                "    42",
+                "101010",
+                "C2H5OH",
+                "LDLDLL",
+                "VVVVVX"]},
+
     ],
     "Edge": [
         {
@@ -142,5 +162,62 @@ TESTS = {
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX"]},
 
 
+    ],
+    "Extra": [
+        {
+            "input": (682, 'a9z1b2c4d6'),
+            "answer": True,
+            "explanation": [
+                "       682",
+                "1010101010",
+                "a9z1b2c4d6",
+                "LDLDLDLDLD",
+                "VVVVVVVVVV"]},
+        {
+            "input": (2730, '9z1b2c4d6a7Z'),
+            "answer": False,
+            "explanation": [
+                "        2730",
+                "101010101010",
+                "9z1b2c4d6a7Z",
+                "DLDLDLDLDLDL",
+                "XXXXXXXXXXXX"]},
+        {
+            "input": (1024, 'I0000000000'),
+            "answer": True,
+            "explanation": [
+                "       1024",
+                "10000000000",
+                "I0000000000",
+                "LDDDDDDDDDD",
+                "VVVVVVVVVVV"]},
+        {
+            "input": (67108865, 'a2345678901234567890123456z'),
+            "answer": True,
+            "explanation": [
+                "                   67108865",
+                "100000000000000000000000001",
+                "a2345678901234567890123456z",
+                "LDDDDDDDDDDDDDDDDDDDDDDDDDL",
+                "VVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
+
+        {
+            "input": (1000, 'OneThousand'),
+            "answer": False,
+            "explanation": [
+                "       1000",
+                "01111101000",
+                "OneThousand",
+                "LLLLLLLLLLL",
+                "XVVVVVXVXXX"]},
+        {
+    "input": (4096, 'C3PO'),
+    "answer": False,
+    "explanation": [
+    "         4096",
+    "1000000000000",
+    "         C3PO",
+    "XXXXXXXXXLDLL",
+    "XXXXXXXXXVVXX"]},
     ]
 }
