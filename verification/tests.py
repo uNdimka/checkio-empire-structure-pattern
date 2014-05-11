@@ -48,6 +48,15 @@ TESTS = {
                 "Сheckio",
                 "LLLLLLL",
                 "VVVVVVV"]},
+        {
+            "input": (8, 'a'),
+            "answer": True,
+            "explanation": [
+                "   8",
+                "1000",
+                "   a",
+                "XXXL",
+                "XXXV"]},
 
         {
             "input": (7, 'Hello'),
@@ -211,13 +220,13 @@ TESTS = {
                 "LLLLLLLLLLL",
                 "XVVVVVXVXXX"]},
         {
-    "input": (4096, 'C3PO'),
-    "answer": False,
-    "explanation": [
-    "         4096",
-    "1000000000000",
-    "         C3PO",
-    "XXXXXXXXXLDLL",
-    "XXXXXXXXXVVXX"]},
+            "input": (4096, 'C3PO'),
+            "answer": False,
+            "explanation": [
+                "         4096",
+                "1000000000000",
+                "         C3PO",
+                "XXXXXXXXXLDLL",
+                "XXXXXXXXXVVXX"]},
     ]
 }

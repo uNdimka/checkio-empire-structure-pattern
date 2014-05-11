@@ -8,5 +8,6 @@ if __name__ == '__main__':
     assert check_command(0, u"478103487120470129") == True, "Any number"
     assert check_command(127, u"Checkio") == True, "Uppercase"
     assert check_command(7, u"Hello") == False, "Only full match"
+    assert check_command(8, u"a") == False, "Too short command"
     assert check_command(5, u"H2O") == True, "Water"
     assert check_command(42, u"C2H5OH") == False, "Yep, this is not the Answer"

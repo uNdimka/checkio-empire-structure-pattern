@@ -10,8 +10,7 @@
     }
 </style>
 <p>
-    Sophia's drones are too simple and can recognize symbols in only single words,
-    digits or letters.
+    Sophia's drones are too simple and can recognize symbols in only single words, digits or letters.
     She wants to teach the drones to understand basic commands which are represented as "words" consisted by letters and digits.
     For that, Sophia has uploaded "patterns," which describe the sequence of digits and letters in the command.
     Unfortunately, the drones memory can only store integers and convert them into binary format for comparison.
@@ -25,6 +24,7 @@
     append zeros to left for the command length and compare this combination with the command.<br>
     <strong>1 is a letter. 0 is a digit.</strong><br>
     If the pattern and the command are coincided, then return True, else -- False.
+    If pattern is longer than a command, then they are not coincided (For example - 8 = 1000 and "a").
 </p>
 
 <div>
