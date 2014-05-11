@@ -112,6 +112,19 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
             $content.find(".explanation").append($table);
 
+            i = 0;
+            var chInterval = setInterval(function() {
+                if (i >= strNumber.length) {
+                    clearInterval(chInterval);
+                    console.log("all");
+                }
+                firstRow.find("td").eq(i).text(strBinary[i]).addClass(strBinary[i] === "0" ? "zero" : "one");
+                secondRow.find("td").eq(i).text(dlForm[i]).addClass(dlForm[i] === "D" ? "zero" : "one");
+                fourthRow.find("td").eq(i).text(compForm[i]).addClass(compForm[i] === "V" ? "right" : "wrong");
+
+                i++;
+            }, 200);
+
             this_e.setAnimationHeight($content.height() + 60);
 
         });

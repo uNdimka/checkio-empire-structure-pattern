@@ -60,13 +60,28 @@
 
 .animation-content .explanation table td {
     font-family: monospace;
-    color: #294270;
+    /*color: #294270;*/
+    color: #737370;
     font-size: 16px;
     max-width: 12px;
     font-weight: bold;
     text-align: center;
     padding: 1px;
 }
+
+.animation-content .explanation table td.one {
+    color: #294270;
+}
+.animation-content .explanation table td.zero {
+    color: #006CA9;
+}
+.animation-content .explanation table td.right {
+    color: #294270;
+}
+.animation-content .explanation table td.wrong {
+    color: #F0801A;
+}
+
 
 .tryit-content {
     background-color: #dfe8f7;

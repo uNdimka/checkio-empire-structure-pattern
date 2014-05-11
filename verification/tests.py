@@ -40,8 +40,8 @@ TESTS = {
                 "DDDDDDDDDDDDDDDDDD",
                 "VVVVVVVVVVVVVVVVVV"]},
         {
-            "input": (127, 'Сheckio'),
-            "answer": False,
+            "input": (127, 'Checkio'),
+            "answer": True,
             "explanation": [
                 "    127",
                 "1111111",
