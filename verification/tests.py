@@ -50,7 +50,7 @@ TESTS = {
                 "VVVVVVV"]},
         {
             "input": (8, 'a'),
-            "answer": True,
+            "answer": False,
             "explanation": [
                 "   8",
                 "1000",
