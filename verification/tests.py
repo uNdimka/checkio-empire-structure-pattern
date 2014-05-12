@@ -141,7 +141,7 @@ TESTS = {
                 "V"]},
 
         {
-            "input": (4294967295, 'LoremIpsumDoLorsiTametConsectet'),
+            "input": (2147483647, 'LoremIpsumDoLorsiTametConsectet'),
             "answer": False,
             "explanation": [
                 "                     2147483647",
@@ -161,7 +161,7 @@ TESTS = {
                 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXV"]},
 
         {
-            "input": (4294967295, 'Loremipsumdolorsitametconsecte9'),
+            "input": (2147483647, 'Loremipsumdolorsitametconsecte9'),
             "answer": False,
             "explanation": [
                 "                     2147483647",
@@ -169,6 +169,7 @@ TESTS = {
                 "Loremipsumdolorsitametconsecte9",
                 "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLD",
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX"]},
+
 
 
     ],
