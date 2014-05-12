@@ -144,8 +144,8 @@ TESTS = {
             "input": (4294967295, 'LoremIpsumDoLorsiTametConsectet'),
             "answer": False,
             "explanation": [
-                "                     4294967295",
-                "11111111111111111111111111111111",
+                "                     2147483647",
+                "1111111111111111111111111111111",
                 "LoremIpsumDoLorsiTametConsectet",
                 "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
