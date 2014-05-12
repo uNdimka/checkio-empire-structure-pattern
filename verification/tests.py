@@ -56,7 +56,7 @@ TESTS = {
                 "1000",
                 "   a",
                 "XXXL",
-                "XXXV"]},
+                "XXXX"]},
 
         {
             "input": (7, 'Hello'),
