@@ -157,7 +157,7 @@ TESTS = {
                 "1111111",
                 " length",
                 "XLLLLLL",
-                "XLLLLLL"]},
+                "XVVVVVV"]},
         {
             "input": (1, 'LoremIpsumDoLorsiTametConsectet'),
             "answer": False,
