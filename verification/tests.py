@@ -142,14 +142,22 @@ TESTS = {
 
         {
             "input": (2147483647, 'LoremIpsumDoLorsiTametConsectet'),
-            "answer": False,
+            "answer": True,
             "explanation": [
                 "                     2147483647",
                 "1111111111111111111111111111111",
                 "LoremIpsumDoLorsiTametConsectet",
                 "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
-
+        {
+            "input": (31, 'LoremIpsumDoLorsiTametConsectet'),
+            "answer": False,
+            "explanation": [
+                "    127",
+                "1111111",
+                " length",
+                "XLLLLLL",
+                "XLLLLLL"]},
         {
             "input": (1, 'LoremIpsumDoLorsiTametConsectet'),
             "answer": False,
