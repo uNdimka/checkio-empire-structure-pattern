@@ -1,1 +1,1 @@
-Add short description
+Storing word data as numbers
