@@ -1,5 +1,5 @@
-function checkio(data) {
-    return 1;
+function check_structure(pattern, structure) {
+    return true || false;
 }
 
 //
