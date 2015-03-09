@@ -1,7 +1,6 @@
 **Precondition:**
 
 ```python
-0 < len(command) < 32
+re.match(structure, "\A[a-z0-9]{1, 32}\Z")
+pattern_level == 1
 ```
-
-"structure" contains only ASCII letters or digits.

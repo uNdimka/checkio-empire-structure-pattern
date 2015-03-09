@@ -1,5 +1,5 @@
 TESTS = {
-    "Level_1": [
+    "Rank_01": [
         {
             "input": (42, '12a0b3e4'),
             "answer": True,
@@ -231,5 +231,92 @@ TESTS = {
                 "         C3PO",
                 "XXXXXXXXXLDLL",
                 "XXXXXXXXXVVXX"]},
+    ],
+    "Rank_02": [
+        {
+            "input": [1823, 'CheckiO', 3],
+            "answer": True,
+            "explanation": ['   1823', '2111112', 'CheckiO', 'VVVVVVV'],
+        },
+        {
+            "input": [1904, 'CheckiO', 3],
+            "answer": False,
+            "explanation": ['   1904',
+                            '2121112',
+                            'CheckiO',
+                            'VVXVVVV'],
+        },
+        {
+            "input": [66431, '9z1b2c4d6a7Z', 3],
+            "answer": True,
+            "explanation": ['       66431', '010101010102', '9z1b2c4d6a7Z', 'VVVVVVVVVVVV'],
+        },
+        {
+            "input": [70076, '9z1b2c4d6a7Z', 3],
+            "answer": False,
+            "explanation": ['       70076', '010120010102', '9z1b2c4d6a7Z', 'VVVVXXVVVVVV'],
+        },
+        {
+            "input": [1330776, '123LoremIpsum123', 3],
+            "answer": True,
+            "explanation": ['         1330776', '0002111121111000', '123LoremIpsum123',
+                            'VVVVVVVVVVVVVVVV'],
+        },
+        {
+            "input": [2541865828331, 'a2345678901234567890123456Z', 3],
+            "answer": True,
+            "explanation": ['              2541865828331', '100000000000000000000000002',
+                            'a2345678901234567890123456Z', 'VVVVVVVVVVVVVVVVVVVVVVVVVVV'],
+        },
+        {
+            "input": [3106724901455, 'a2345678901234567890123456Z', 3],
+            "answer": False,
+            "explanation": ['              3106724901455', '102000000000000000000020002',
+                            'a2345678901234567890123456Z', 'VVXVVVVVVVVVVVVVVVVVVVXVVVV'],
+        },
+        {
+            "input": [2186, 'ABCDEFG', 3],
+            "answer": True,
+            "explanation": ['   2186', '2222222', 'ABCDEFG', 'VVVVVVV'],
+        },
+        {
+            "input": [43928, 'ABC000DEFG', 3],
+            "answer": False,
+            "explanation": ['     43928', '2020020222', 'ABC000DEFG', 'VXVVVXXVVV'],
+        },
+    ],
+    "Rank_03": [
+        {
+            "input": [39294315, 'Kill Them ALL', 4],
+            "answer": False,
+            "explanation": ['     39294315', '2111321111223', 'Kill Them ALL', 'VVVVVVVVVXVVX'],
+        },
+        {
+            "input": [39294442, 'Feed Them ALL', 4],
+            "answer": True,
+            "explanation": ['     39294442', '2111321113222', 'Feed Them ALL', 'VVVVVVVVVVVVV'],
+        },
+        {
+            "input": [357333, 'Take 1 mine', 4],
+            "answer": False,
+            "explanation": ['     357333', '01113033111', 'Take 1 mine', 'XVVVVVVXVVV'],
+        },
+        {
+            "input": [2930682794, 'DO NOT TAKE THIS', 4],
+            "answer": True,
+            "explanation": ['      2930682794', '2232223222232222', 'DO NOT TAKE THIS',
+                            'VVVVVVVVVVVVVVVV'],
+        },
+        {
+            "input": [2385166685525, 'C3PO and 300 spartans', 4],
+            "answer": True,
+            "explanation": ['        2385166685525', '202231113000311111111',
+                            'C3PO and 300 spartans', 'VVVVVVVVVVVVVVVVVVVVV'],
+        },
+        {
+            "input": [939413, '101 Dalmatian', 4],
+            "answer": False,
+            "explanation": ['       939413', '0003211112111', '101 Dalmatian', 'VVVVVVVVVXVVV'],
+        },
     ]
 }

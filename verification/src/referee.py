@@ -5,7 +5,10 @@ import settings_env
 from tests import TESTS
 
 cover = """def cover(f, data):
-    return f(d[0], str(d[1]))
+    if len(data) <= 2:
+        return f(d[0], str(d[1]))
+    else:
+        return f(d[0], str(d[1]), d[2])
 """
 
 
