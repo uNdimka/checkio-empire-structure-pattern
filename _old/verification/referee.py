@@ -46,5 +46,5 @@ api.add_listener(
         # add_allowed_modules=[],
         # add_close_builtins=[],
         # remove_allowed_modules=[],
-        function_name="check_command"
+        DEFAULT_FUNCTION_NAME="check_command"
     ).on_ready)
