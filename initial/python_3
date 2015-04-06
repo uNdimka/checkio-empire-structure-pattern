@@ -21,5 +21,6 @@ if __name__ == '__main__':
 
     # Rank 3
     assert not check_structure(39294315, 'Kill Them ALL', 4), "Don't kill"
+    assert not check_structure(29, 'aXz', 4), "A Z"
     assert check_structure(39294442, 'Feed Them ALL', 4), "Feed them"
     assert check_structure(2385166685525, 'C3PO and 300 spartans', 4), "C3PO"

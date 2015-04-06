@@ -292,6 +292,12 @@ TESTS = {
             "explanation": ['     39294315', '2111321111223', 'Kill Them ALL', 'VVVVVVVVVXVVX'],
         },
         {
+            "input": [29, 'aXz', 4],
+            "answer": False,
+            "explanation": [' 29', '131', 'aXz', 'VXV'],
+        },
+
+        {
             "input": [39294442, 'Feed Them ALL', 4],
             "answer": True,
             "explanation": ['     39294442', '2111321113222', 'Feed Them ALL', 'VVVVVVVVVVVVV'],
