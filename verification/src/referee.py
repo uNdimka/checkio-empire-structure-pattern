@@ -4,7 +4,7 @@ from checkio_referee import RefereeBase, representations
 import settings_env
 from tests import TESTS
 
-cover = """def cover(f, data):
+cover = """def cover(f, d):
     if len(data) <= 2:
         return f(d[0], str(d[1]))
     else:
