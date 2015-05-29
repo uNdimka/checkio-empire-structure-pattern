@@ -1,4 +1,4 @@
-from checkio_referee import RefereeBase, representations
+from checkio_referee import RefereeRank, representations
 
 
 import settings_env
@@ -12,7 +12,7 @@ cover = """def cover(f, d):
 """
 
 
-class Referee(RefereeBase):
+class Referee(RefereeRank):
     TESTS = TESTS
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
