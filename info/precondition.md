@@ -1,6 +1,5 @@
 **Precondition:**
 
-```python
-re.match(structure, "\A[a-z0-9]{1, 32}\Z")
-pattern_level == 1
-```
+`structure` matches by `"\A[a-z0-9]{1, 32}\Z"` regexp expression. 
+
+`pattern_level = 2`
